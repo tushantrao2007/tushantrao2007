@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="container">
+    <div class="start-screen hide">
+      <h1 class="heading">QUIZ GROW</h1>
+      <div class="settings">
+        <label for="num" id="noq">Number of Questions:</label>
+        <select name="" id="numq">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+        </select>
+        <label for="cat" id="category">Select Category:</label>
+        <select name="" id="cat">
+          <option value="">any category</option>
+          <option value="music">music</option>
+          <option value="computer">computer</option>
+          <option value="pol">politics</option>
+          <option value="cricket">cricket</option>
+        </select>
+        <label for="dif" id="diff">Select Difficulty:</label>
+        <select name="" id="dif">
+          <option value="">any difficulty</option>
+          <option value="easy">easy</option>
+          <option value="medium">medium</option>
+          <option value="hard">hard</option>
+        
+        </select>
+        <label for="tim" id="time">Select time per Question:</label>
+        <select name="" id="tim">
+      
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+          <option value="60">60</option>
+
+        </select>
+      </div>
+      <button class="btn start">Start Quiz</button>
+    </div>
+    <div class="quiz hide"> 
+      <div class="timer">
+        <div class="progress">
+          <div class="progress-bar"> </div>
+          <span class="progress-text">50</span>
+        </div>
+      </div>
+      <div class="question-wrapper">
+        <div class="number">
+          Question <span class="current">1</span>
+          <span class="total">/10</span>
+        </div>
+        <div class="question">This is a Question:</div>
+      </div>
+        <div class="answer-wrapper">
+          <div class="answer selected">
+            <span class="text">answer</span>
+            <span class="checkbox">
+              <span class="icon">✔</span></span>
+          </div>
+          <div class="answer correct">
+              <span class="text">answer</span>
+              <span class="checkbox">
+                <span class="icon">✔</span></span>
+            </div>
+            <div class="answer wrong">
+                <span class="text">answer</span>
+                <span class="checkbox">
+                  <span class="icon">✔</span></span>
+              </div>
+            </div>
+            <button class="btn submit" disabled>Submit</button>
+            <button class="btn next">Next</button>
+</div>
+<div class="end-screen">
+<h1 class="heading">Quiz Grow</h1>
+<div class="score">
+  <span class="score-text">Your Score:</span>
+  <div>
+    <span class="final-score">0</span>
+    <span class="total-score">/10</span>
+  </div>
+</div>
+<button class="btn restart">Restart Quiz</button>
+</div>
+</div>
+        
+
+
+<script src="quiz.js"></script>
+</body>
+</html>
